@@ -3,9 +3,11 @@ import PlotFigure from "../components/PlotFigure.astro";
 import Layout from "../layouts/Layout.astro";
 import * as Plot from "@observablehq/plot";
 import penguins from "../assets/penguins.json";
+import Headerspecifics from "../components/Headerspecifics.astro";
 ---
 
 <Layout>
+  <Headerspecifics />
   <h1 class="text-2xl">Test Astro et Plot (Observablehq)</h1>
   <PlotFigure
     options={{
@@ -18,12 +20,4 @@ import penguins from "../assets/penguins.json";
       ],
     }}
   />
-  <div>
-    <nav>
-      <ul class="flex space-x-4">
-        <li class="border-2 border-red-700 rounded-lg"><a href="/species">Species</a></li>
-        <li class="border-2 border-red-700 rounded-lg"><a href="/iframe/test-iframe">Iframe</a></li>
-      </ul>
-    </nav>
-  </div>
 </Layout>
