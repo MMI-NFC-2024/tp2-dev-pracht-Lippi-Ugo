@@ -63,13 +63,15 @@ const { current = "/" } = Astro.props;
     }
   </style>
   <div class="nav-content">
+    <div class="nav-content">
     <nav>
-      <ul>
-        <li><a href="/species" class={current === "/species" ? "active" : ""}>Species</a></li>
-        <li><a href="/species/Adelie" class={current === "/species/Adelie" ? "active" : ""}>Adelie</a></li>
-        <li><a href="/species/Gentoo" class={current === "/species/Gentoo" ? "active" : ""}>Gentoo</a></li>
-        <li><a href="/species/Chinstrap" class={current === "/species/Chinstrap" ? "active" : ""}>Chinstrap</a></li>
-      </ul>
+        <ul>
+            <li><a href="/" class={current === "/" ? "active" : ""}>Accueil</a></li>
+            <li><a href="/species/Adelie" class={current === "/species/Adelie" ? "active" : ""}>Adelie</a></li>
+            <li><a href="/species/Gentoo" class={current === "/species/Gentoo" ? "active" : ""}>Gentoo</a></li>
+            <li><a href="/species/Chinstrap" class={current === "/species/Chinstrap" ? "active" : ""}>Chinstrap</a></li>
+        </ul>
     </nav>
+  </div>
   </div>
 </header>
