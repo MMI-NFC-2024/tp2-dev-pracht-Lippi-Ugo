@@ -18,6 +18,11 @@ const penguin = penguins.filter(p => p.species === species);
           stroke: "species",
         }),
       ],
+      color: {
+        type: "categorical",
+        domain: ["Adelie", "Chinstrap", "Gentoo"],
+        range: ["#1f77b4", "#ff7f0e", "#d62728"],
+      },
     }}
     />
 </div>
